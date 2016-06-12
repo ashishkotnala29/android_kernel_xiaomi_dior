@@ -232,8 +232,8 @@ static ssize_t vibrator_amp_store(struct device *dev,
 
 	if (pwm_duty > 100)
 		pwm_duty = 100;
-	else if (pwm_duty < 80)
-		pwm_duty = 80;
+	else if (pwm_duty < 50)
+		pwm_duty = 50;
 
 	return size;
 }
